@@ -5,4 +5,4 @@ TARGETS=o
 all: $(TARGETS)
 
 o: o.c
-	$(CC) -static $< -o $@
+	$(CC) -static $< -o $@ -w
