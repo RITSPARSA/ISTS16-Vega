@@ -1,11 +1,8 @@
 CC=cc
 GCC=gcc
-TARGETS=o prog
+TARGETS=o
 
 all: $(TARGETS)
-
-prog: prog.c
-	$(GCC) -o $@ $<
 
 o: o.c
 	$(CC) -static $< -o $@
